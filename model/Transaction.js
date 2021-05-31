@@ -5,6 +5,10 @@ const transSchema = mongoose.Schema({
     type: String,
     required: true,
   },
+  createdAt: {
+    type: Date,
+    default: Date.now(),
+  },
   groupID: {
     type: String,
     required: true,
@@ -16,6 +20,12 @@ const transSchema = mongoose.Schema({
   memo: {
     type: String,
     required: true,
+  },
+  image: {
+    type: String,
+  },
+  recurring: {
+    type: Boolean,
   },
 });
 
