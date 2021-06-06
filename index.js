@@ -15,7 +15,7 @@ wss.on("connection", function (ws) {
   ws.send(JSON.stringify({ title: "hello", message: "Hi There!" }));
 });
 
-server.listen(3000, () => console.log(3000));
+server.listen(3002, () => console.log(3000));
 
 app.use(express.json());
 
